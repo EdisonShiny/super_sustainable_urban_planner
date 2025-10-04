@@ -764,7 +764,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
   List<FeedbackEntry> _visibleFeedbackEntries(UserProfile profile) {
     if (profile.isCityLeader) return _feedbackEntries;
-    return _feedbackEntries.where((e) => e.userId == profile.id).toList();
+    //return _feedbackEntries.where((e) => e.userId == profile.id).toList();
+    return _feedbackEntries;
   }
 
   List<IndexScore> _buildZeroScores(DateTime timestamp) {
